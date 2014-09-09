@@ -1,0 +1,49 @@
+<script>
+	var message, redo;
+	
+	//input
+	var	team = prompt("Which is your favorite comic book team? Avengers, Justice League , or GI Joe?").toUpperCase();
+
+	//Process
+
+	if (team == "AVENGERS") {
+		var guess = prompt("Neat, do you know how many founding Avengers were there?");
+			if (guess == "5") {
+				message = "You got it right...Nerd =P";
+			}
+				else {
+					message = "Nope!";
+				}
+	}
+		else if (team == "JUSTICE LEAGUE") {
+			guess = prompt("Really.  Do you know how many founding Justice League are in the new 52");
+				if (guess == "8") {
+					message = "Nice, you are able to keep up with the changes DCU throws!";
+				}
+					else {
+						message = "DC snuck in past you! Sorry.";
+					}
+		}
+		else if (team = "GI JOE") {
+			guess = prompt("Not a common choice but okay.  Do you know the size of the original team?");
+				if (guess == "9") {
+					message = "Woah, you know how to kick it old school.";
+				}
+					else {
+						message = "Nice try, it was a long time ago so don't feel to bad.";
+					}
+		}
+		else {
+			message = "Guess you didn't like any of those teamms, you must be a villain!";
+		}
+
+	//Output
+	redo = prompt(message + " Would you like to check out the others? (Yes or No)").toUpperCase();
+		if (redo == "YES") {
+			location.reload();
+		}
+			else {
+				alert("Goodbye!");
+			}
+
+</script>

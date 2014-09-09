@@ -1,0 +1,30 @@
+<script>
+	
+	var coin, message;
+
+	alert("Coin Flip Guesser!");
+
+	//Input
+	var guess = prompt("What do you think? Heads or Tails?").toUpperCase(); 
+	var comp = Math.floor(Math.random() * 2 + 1);
+
+	//Process
+
+	if (guess == "HEADS") {
+		comp = 1
+	}
+		else {
+			comp = 2
+		}
+
+	if (coin == comp) {
+		 message = "You guessed correctly!! You cheeky git!";
+	}
+		else {
+			message =  "Oh! So close! Reload to try again.";
+	}
+
+	//Output
+	alert (message);
+
+</script>
